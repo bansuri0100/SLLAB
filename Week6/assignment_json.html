@@ -7,29 +7,32 @@ with atleast 2 patients details. -->
 <html>
 <head>
     <title>JSON Assignment</title>
+    <style>
+    	body{background-color:lightblue};
+    
+    </style>
     
 </head>
 <body>
-    <p><h1>Display Patients Details</h1></p>
+    <p><h1>Display Patients' Details</h1></p>
     <p id="demo"></p>
 
     <script>
     var pat,i,j,x="";
-    pat=
-    [
+    pat=[
        {"patientName" : "Rahul",
        "doctorName" : "Dr.Rishi",
        "diseases" : [
-       		{"name":"dengue","symptoms":["High Fever","Chills","Vommitting"]},
-       		{"name":"rhinitis","symptoms":["Running nose","Sneezing"]}
+       		{"name":"Dengue","symptoms":["High Fever ","Chills ","Vommitting"]},
+       		{"name":"Rhinitis","symptoms":["Running nose ","Sneezing"]}
        		]
        	},
        	{
        	"patientName" : "Akash",
        "doctorName" : "Dr.Minto",
        "diseases" : [
-       		{"name":"malaria","symptoms":["High Fever","Headache","Nausea"]},
-       		{"name":"goitre","symptoms":["Inflamation of neck","Throat pain"]}
+       		{"name":"Malaria","symptoms":["High Fever ","Headache ","Nausea"]},
+       		{"name":"Goitre","symptoms":["Inflamation of neck ","Throat pain"]}
        		]
        	}
 
@@ -37,21 +40,21 @@ with atleast 2 patients details. -->
 
     ]
     for(i in pat){
-        x+="<h2>Patient Name :"+pat[i].patientName+"</h2><br>"+;
-        x+="<h2>Doctors Name :"+pat[i].doctorName+"</h2><br>"+;
-        x+="Diseases:";
+        x+="<h2>Patient Name :"+pat[i].patientName+"</h2>";
+        x+="<h2>Doctors Name :"+pat[i].doctorName+"</h2>";
+        x+="<h3>Diseases:</h3>";
         
 
         for(j in pat[i].diseases){
         
-        x+=pat[i].diseases[j].name+"<br>";
-        x+="Symptoms:";
-        x+=pat[i].diseases[j].symptoms+"<br>";
+        x+="<strong>"+pat[i].diseases[j].name+"</strong>"+"<br>";
+        x+="<br>"+"<u>Symptoms</u>:";
+        x+=pat[i].diseases[j].symptoms+"<br><br>";
         }
 
     }
 
-    document.getElementById("demo").innerHTML=x;
+    document.getElementById("demo").innerHTML =x;
     </script>
     
 </body>
