@@ -1,0 +1,44 @@
+<!-- Create a webpage that stores the details of  patients as JSON objects.
+The name of the patient and the doctor is stored as name value pair.The diseases that
+the patient suffers from along with the symptoms is stored in an array.Display the webpage 
+with atleast 2 patients details. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Assignment</title>
+    
+</head>
+<body>
+    <p>Display Patients Details</p>
+    <p id="demo"></p>
+
+    <script>
+    var myObj,i,j,x="";
+    myObj=
+    {
+        "pname":"John",
+        "dname":"Chris",
+        "dis":["fever","cold"]},
+        {
+        "pname":"Boris",
+        "dname":"Don",
+        "dis":["diabetes","bp"]};
+
+            
+
+    }
+    for(i in myObj){
+        x+="<h2>"+myObj.cars[i].name+"</h2>";
+
+        for(j in myObj.cars[i].models){
+        x+=myObj.cars[i].models[j]+"<br>";
+        }
+
+    }
+
+    document.getElementById("demo").innerHTML =x;
+    </script>
+    
+</body>
+</html>
