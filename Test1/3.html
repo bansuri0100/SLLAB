@@ -1,0 +1,42 @@
+<!-- Create an JSON object to store the font names and their values or numbers . Use this font object to display it on the webpage.
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test 1</title>
+	
+</head>
+
+<body>
+	
+	<p><h1>Display the font details</h1> </p>
+	<p id ="demo"></p>
+	<script>
+	var font, i,x="";
+
+	font= [
+			{"name":"TimesNewRoman",
+			"number":"One"},
+	
+	{
+		"name":"Calibri",
+		"number":"Two"
+	},
+	{
+		"name":"Helvetica",
+		"number":"Three"
+	}]
+	for(i in font){
+		x+="<h3>"+i.name+"</h3>";
+		x+="<h4>"+i.number+"</h4><br>";
+	}
+	
+
+	document.getElementById("demo").innerHTML =x;	
+	</script>
+
+
+
+
+</body>
+</html>
