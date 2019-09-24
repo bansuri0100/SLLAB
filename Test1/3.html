@@ -15,20 +15,20 @@
 	var font, i,x="";
 
 	font= [
-			{"name":"TimesNewRoman",
+			{"names":"TimesNewRoman",
 			"number":"One"},
 	
 	{
-		"name":"Calibri",
+		"names":"Calibri",
 		"number":"Two"
 	},
 	{
-		"name":"Helvetica",
+		"names":"Helvetica",
 		"number":"Three"
 	}]
 	for(i in font){
-		x+="<h3>"+i.name+"</h3>";
-		x+="<h4>"+i.number+"</h4><br>";
+		x+="<h3>"+font[i].names+"</h3>";
+		x+="<h4>"+font[i].number+"</h4><br>";
 	}
 	
 
