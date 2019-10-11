@@ -2,11 +2,12 @@ def letterSurround(s):
 	flag=True
 	plus=0
 	equal=0
-	for i in range(0,len(s)-1):
+	for i in range(0,len(s)):
 		if(s[i]=='=' ):
 			equal+=1
 			continue
 		elif(s[i]=='+'):
+			
 			plus+=1
 			continue	
 		elif(s[i].isalpha()):
@@ -15,6 +16,7 @@ def letterSurround(s):
 			else:
 				flag==False
 				break
+				
 	if(flag==True and equal>0 and plus>0):
 		print("Accepted")
 	else:
