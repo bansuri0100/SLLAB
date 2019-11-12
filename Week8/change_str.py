@@ -8,8 +8,10 @@ def ChangeString(s):
 	new2=[]
 	for i in new:
 		
-		if(i.isalpha()):
+		if(i.isalpha() and i!='z'):
 			new1.append(chr(ord(i)+ 1 ))
+		elif(i=='z'):
+			new1.append('a')	
 		else:
 			new1.append(i)
 			
