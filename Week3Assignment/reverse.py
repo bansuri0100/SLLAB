@@ -25,13 +25,13 @@ for i in range(0,3):
 
 
 '''Output
-Enter string :aa aa
-Enter string :a a
-Enter string :aaa aaa
-[(6, 'aaa aaa'), (4, 'aa aa'), (2, 'a a')]
-aaa aaa
-aa aa
-a a
+Enter string :i am here
+Enter string :he was here
+Enter string :they were here yesterday
+[(8, 'yesterday here were they'), (4, 'here was he'), (4, 'here am i')]
+yesterday here were they
+here was he
+here am i
 '''	
 									
 				
