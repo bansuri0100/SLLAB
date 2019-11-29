@@ -135,13 +135,16 @@ Submitted to : Dr. Mydhili K Nair (Faculty Coordinator)
  ## Screenshots ##
  
 DATA SCIENCE
-![alt tag](file:///home/bansuri0100/Pictures/Screenshot%20from%202019-11-29%2022-04-56.png)
-![alt tag](https://github.com/bhushangy/SL-Lab/blob/master/Part%20A/datasci2.JPG)
+![alt tag](https://github.com/bansuri0100/SL_LAB/blob/master/screenshots/ds1.png)
+![alt tag](https://github.com/bansuri0100/SL_LAB/blob/master/screenshots/ds2.png)
 
 HTML
-![alt tag](https://github.com/bhushangy/SL-Lab/blob/master/Part%20A/html.JPG)
-![alt tag](https://github.com/bhushangy/SL-Lab/blob/master/Part%20A/html%26js.JPG)
+![alt tag](https://github.com/bansuri0100/SL_LAB/blob/master/screenshots/html1.png)
+![alt tag](https://github.com/bansuri0100/SL_LAB/blob/master/screenshots/html2.png)
 
 FLASK
-![alt tag](https://github.com/bhushangy/SL-Lab/blob/master/Part%20A/flask.JPG)
+![alt tag](https://github.com/bansuri0100/SL_LAB/blob/master/screenshots/flask.png)
+
+PYTHON
+![alt tag](https://github.com/bansuri0100/SL_LAB/blob/master/screenshots/python.png)
 
