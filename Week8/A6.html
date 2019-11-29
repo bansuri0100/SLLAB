@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            A6
+        </title>
+    </head>
+    <body>
+        <div>
+            <textarea id="area" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <button onclick="myFunction()">Click</button>
+        </div>
+        <p id = 'l'></p>
+        
+
+
+
+
+
+
+        <script>
+                function myFunction() {
+                  var len = 0;
+                  var x = document.getElementById("area").value;
+                  
+                  var lis = x.split(' ');
+                  
+                   len = lis[0].length;
+                  for (var i=0;i<lis.length;i++){
+                  if(lis[i].length>len)
+                      len=lis[i].length;
+                    }
+                  document.getElementById("l").innerHTML = len;
+                  
+                }
+                </script>
+                
+        
+    </body>
+</html>

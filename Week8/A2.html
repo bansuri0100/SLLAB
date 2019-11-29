@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            A9
+        </title>
+    </head>
+    <body>
+        <form action="#" onsubmit="fun()" method="GET">
+            TEXT<input type="text" id='t1'>
+            <br>
+            NUM1<input type="number" id="n1">
+            <br>
+            NUM2<input type="number" id='n2'>
+            <br>
+            <input type="submit">
+        </form>
+        <p id='res'></p>
+
+
+
+
+        <script>
+            function fun(){
+                var arr = [
+                {'text':document.getElementById('t1').value},
+                {'num1':document.getElementById('n1').value},
+                {'num1':document.getElementById('n2').value}
+                ]
+                //OR
+                lis = ['text','num1','num2']
+                val = [document.getElementById('t1').value,document.getElementById('n1').value,document.getElementById('n2').value]
+               //var x = arr[0]['text'] + '<br>' + arr[1]['num1'] + '<br>' +  arr[2]['num2'];
+               var x = lis[0] + ":" + val[0] + '<br>' +  lis[1] + ":" + val[1] + '<br>' +lis[2] + ":" + val[2] + '<br>'
+               document.getElementById('res').innerHTML = x;
+            }
+        </script>
+
+    </body>
+</html>
