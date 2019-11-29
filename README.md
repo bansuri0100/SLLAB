@@ -135,7 +135,7 @@ Submitted to : Dr. Mydhili K Nair (Faculty Coordinator)
  ## Screenshots ##
  
 DATA SCIENCE
-![alt tag](https://github.com/bhushangy/SL-Lab/blob/master/Part%20A/datasci1.JPG)
+![alt tag](file:///home/bansuri0100/Pictures/Screenshot%20from%202019-11-29%2022-04-56.png)
 ![alt tag](https://github.com/bhushangy/SL-Lab/blob/master/Part%20A/datasci2.JPG)
 
 HTML
