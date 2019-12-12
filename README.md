@@ -1,15 +1,4 @@
-# Scripting Lab Programs Submission #
 
-(under Department of ISE, Ramaiah Institute of Technology)
-
-
-USN          : 1MS17IS034
-
-Name         : BANSURI J SANGANAL
-
-Section      : 5A
-
-Submitted to : Dr. Mydhili K Nair (Faculty Coordinator)
 
 
 ## List of programs ##
