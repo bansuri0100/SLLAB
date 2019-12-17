@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Items Purchase</title>
+</head>
+<body>
+	<h1>Items Purchase</h1>
+	<form>
+		Item Name :<input type = text ><br>
+		Item Price in Rs:<select id=price><br>
+			<option value="50">Rs 50</option>
+			<option value="100">Rs 100</option>
+			<option value="150">Rs 150</option>
+			<option value="200">Rs 200</option>
+		</select><br>
+		Number of items:<input id="no" type=number><br>
+	</form>
+	<button onclick=fun()>Submit</button><br>
+	Total Cost in Rupees is :<p id="text"></p>
+		<button onclick=aler()>Paid</button>
+	<script >
+
+		function fun()
+		{
+			
+			var x=document.getElementById("no").value*parseInt(document.getElementById("price").value);
+			document.getElementById("text").innerHTML=x;
+		}
+		function aler()
+		{
+			alert("Amount has been paid !");
+		}		
+	</script>
+</body>
+</html>	
+	
+		 		

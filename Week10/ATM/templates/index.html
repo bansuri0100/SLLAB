@@ -2,6 +2,9 @@
 
 <html>
 	<head>
+	<!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     	<title>ATM</title>
   	</head>
 
@@ -16,30 +19,30 @@
 		<!-- Form for amount details, with buttons to Deposit or Withdraw -->
 		<form action="{{url_for('index')}}" method="POST" id="atm">
 		 	Amount : <input name = "amount" type="number" required /><br>
-			<input type="submit" name="action" value="Withdraw" onclick="return validateForm(this)">
-			<input type="submit" name="action" value="Deposit" onclick="return validateForm(this)">
+			<input type="submit" name="action" value="Withdraw" onclick="validateForm()">
+			<input type="submit" name="action" value="Deposit" onclick="validateForm()">
 		</form>
 
 		<!-- Javascript to validate amount -->
 		<script>
-			function validateForm(button) 
+			function validateForm() 
 			{
 				var form = document.getElementById("atm");
 
 				// Checks if amount field is empty
 				if (form.amount.value == "" ) {
 					alert("Amount required");
-					return false;
+					
 				}
 
 				// Checks if amount entered is negative
 				if (parseInt(form.amount.value) < 0) {
 					alert("Cannot enter negative amount");
-					return false;
+					
 				}
 				
 				// Checks if user clicked on Withdraw and amount is greater than 5000
-				if(button.value == "Withdraw" && parseInt(form.amount.value) > 5000)
+				if(form.action.value== "Withdraw" && parseInt(form.amount.value) > 5000)
 				{
 					alert("Cannot withdraw more than 5000");
 			        return false;
