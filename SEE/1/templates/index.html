@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATM</title>
+</head>
+<body>
+	<h1>ATM</h1>
+	<h2>You current balance is : {{balance}}</h2>
+	<h3>{{msg}}</h3>
+	<form  action ="{{url_for('index')}}" method="POST" id='atm'>
+		Amount : <input type=number name="amount" required></br>
+		<input type=submit name="action" value="withdraw" onclick="return validateForm(this)">
+		<input type=submit name="action" value ="deposit" onclick="validateForm()">
+	</form>
+	<script>
+		function validateForm(button)
+		{
+			var form =document.getElementById('atm');
+			if(form.amount.value <0)
+				alert("Amount cannot be less than 0");	
+			if(button.value=="withdraw" && form.amount.value>5000)
+			{
+				alert("Withdraw amount cannot be more than Rs.5000");
+				return false;
+			}
+			//more conditions can be added	
+		}
+	</script>
+</body>
+</html>
