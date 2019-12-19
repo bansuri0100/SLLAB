@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Cars Dynamic</title>
+</head>
+<body>
+	<p id='p0' onmouseover='func(0)' onmouseout='fun(0)' >Lamborghini</p>
+	<p id='c0'></p>
+	
+	<p id='p1' onmouseover='func(1)' onmouseout='fun(1)'>Tesla</p>
+	<p id='c1'></p>
+	
+	<script>
+		function func(id)
+		{
+			var c='c'+id;
+			var cars=[
+			{'name':'Aventador','model':['a','b','c'],'year':'2015'},
+			{'name':'Cybertruck','year':'2019','model':['d','e','f']}
+			]
+			var x='';
+			x+="Name :"+cars[id].name+"<br>"+"Year :"+cars[id].year+"<br>";
+			x+="Models :";
+			for(var i=0;i<cars[id].model.length;i++)
+			{
+				x+=cars[id].model[i]+" | ";
+			}
+			document.getElementById('p'+id).style.color='green';
+			document.getElementById(c).innerHTML=x;
+		}
+		function fun(id)
+		{
+			document.getElementById('p'+id).style.color='black';
+			document.getElementById('c'+id).innerHTML='';
+		}	
+	</script>
+</body>
+</html>					
