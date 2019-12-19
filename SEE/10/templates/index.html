@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Student Registration</title>
+</head>
+<body>
+	<h2>{{msg}}</h2>
+	<form action="{{url_for('index')}}" method ="POST" id='stud'>
+	USN(eg: 1MS17IS034)<input type="text" name="usn" id="usn"><br>
+	DOB(eg:01/01/1999) <input type="text" name="dob" id="dob"><br>
+    	Marks1 <input type="number" name="m1" id="m1"><br>
+    	Marks2 <input type="number" name="m2" id="m2"><br>
+    	Marks3 <input type="number" name="m3" id="m3"><br>
+    	<input type=submit  name='action' value='Submit' onclick='validate()'>
+    	</form>
+    	
+    	<script>
+    		function validate()
+    		{
+    			if(document.getElementById('usn').value==""||document.getElementById('dob').value==""||
+        		document.getElementById('m1').value==""||document.getElementById('m2').value==""||document.getElementById('m3').value=="")
+        			alert('Cannot be empty !')
+    		}
+    	</script>
+    </body>
+   </html> 		
